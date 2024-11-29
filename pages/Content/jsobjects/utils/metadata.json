@@ -1,0 +1,32 @@
+{
+  "gitSyncId": "674603f58ce42030fd49a9d1_d774333a-d607-49c8-9fb8-040ad8f3fb16",
+  "id": "Content_utils",
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Content",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "moduleContent",
+        "value": "{}"
+      },
+      {
+        "name": "addQuestion",
+        "value": "false"
+      },
+      {
+        "name": "showNewQuestion",
+        "value": "false"
+      },
+      {
+        "name": "newQuestionType",
+        "value": "''"
+      },
+      {
+        "name": "newQuizQuestions",
+        "value": "[]"
+      }
+    ]
+  }
+}

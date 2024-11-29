@@ -1,0 +1,42 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "defaultSwitchState": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kfcl4g89vu",
+  "label": "Ghi nhớ đăng nhập",
+  "labelPosition": "Left",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 15,
+  "needsErrorInfo": false,
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
+  "parentColumnSpace": 10.4287109375,
+  "parentId": "rh5ydyjopm",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "topRow": 13,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "e9n3xin92s",
+  "widgetName": "rememberSwitch"
+}

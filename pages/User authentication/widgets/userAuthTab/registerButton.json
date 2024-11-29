@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 37,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "b9rmgk9n8y",
+  "leftColumn": 0,
+  "minWidth": 120,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "onClick": "{{registerObject.signUp();}}",
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
+  "parentColumnSpace": 10.4287109375,
+  "parentId": "ukt2j6rtwh",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Đăng ký",
+  "topRow": 33,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "k1vhi68gkt",
+  "widgetName": "registerButton"
+}

@@ -1,0 +1,3 @@
+export default {
+	supabaseProvider: supabase.createClient("https://kohursndufdglwodwmzu.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtvaHVyc25kdWZkZ2x3b2R3bXp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzAzNzA5NTUsImV4cCI6MjA0NTk0Njk1NX0.sij1bQSqDbXO5MKdS-sNVsUvZxokzc3yXSQyqoB7Xcg"), 
+}

@@ -1,0 +1,101 @@
+{
+  "appIsExample": false,
+  "appLayout": {
+    "type": "DESKTOP"
+  },
+  "applicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    },
+    "navigationSetting": {
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoOnly",
+      "navStyle": "stacked",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": false,
+      "showSignIn": false
+    },
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#FBF4ED",
+  "embedSetting": {
+    "height": "720px",
+    "showNavigationBar": false,
+    "width": "1024px"
+  },
+  "evaluationVersion": 2,
+  "icon": "globe",
+  "pages": [
+    {
+      "id": "Modules2",
+      "isDefault": false
+    },
+    {
+      "id": "Content2",
+      "isDefault": false
+    },
+    {
+      "id": "Modules",
+      "isDefault": false
+    },
+    {
+      "id": "Content",
+      "isDefault": false
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "Admin authentication",
+      "isDefault": true
+    },
+    {
+      "id": "User authentication",
+      "isDefault": false
+    },
+    {
+      "id": "Organization authentication",
+      "isDefault": false
+    },
+    {
+      "id": "Page2",
+      "isDefault": false
+    },
+    {
+      "id": "Admin",
+      "isDefault": false
+    }
+  ],
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    },
+    "navigationSetting": {
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoOnly",
+      "navStyle": "stacked",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": false,
+      "showSignIn": false
+    },
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  }
+}

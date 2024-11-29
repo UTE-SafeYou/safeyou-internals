@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 37,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "gddgwgnz0v",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Trạng thái",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 32,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 21,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 37,
+  "originalTopRow": 30,
+  "parentColumnSpace": 8.095703125,
+  "parentId": "r59biap745",
+  "parentRowSpace": 10,
+  "placeholderText": "Lựa chọn",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Đã giao\",\n    \"code\": \"TODO\"\n  },\n  {\n    \"name\": \"Đang làm\",\n    \"code\": \"DOING\"\n  },\n  {\n    \"name\": \"Đã hoàn thành\",\n    \"code\": \"D\"\n  }, \n\t{\n\t\t\"name\": \"Không hoàn thành\",\n\t\t\"code\": \"MISS\"\n\t}\n]",
+  "topRow": 30,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "6kg8ma9ehb",
+  "widgetName": "slKhanCapCopy"
+}
