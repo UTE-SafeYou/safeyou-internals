@@ -35,6 +35,12 @@
   "icon": "globe",
   "pages": [
     {
+      "isDefault": false
+    },
+    {
+      "isDefault": false
+    },
+    {
       "id": "Modules2",
       "isDefault": false
     },
@@ -67,10 +73,10 @@
       "isDefault": false
     },
     {
+      "id": "Admin",
       "isDefault": false
     },
     {
-      "id": "Admin",
       "isDefault": false
     }
   ],
