@@ -35,14 +35,6 @@
   "icon": "globe",
   "pages": [
     {
-      "id": "Restaurant Partners",
-      "isDefault": false
-    },
-    {
-      "id": "Driver Information",
-      "isDefault": false
-    },
-    {
       "id": "Modules2",
       "isDefault": false
     },
@@ -75,11 +67,10 @@
       "isDefault": false
     },
     {
-      "id": "Admin",
       "isDefault": false
     },
     {
-      "id": "User",
+      "id": "Admin",
       "isDefault": false
     }
   ],
