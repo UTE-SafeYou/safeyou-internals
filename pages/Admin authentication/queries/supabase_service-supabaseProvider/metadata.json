@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "supabase_service.supabaseProvider",
     "name": "supabaseProvider",
     "pageId": "Admin authentication",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

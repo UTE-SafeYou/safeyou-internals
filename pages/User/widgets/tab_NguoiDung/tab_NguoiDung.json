@@ -144,6 +144,51 @@
       "version": 1,
       "widgetId": "kkxh3u8qbg",
       "widgetName": "Canvas115"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 1130,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "3fnw2ptlea",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 1170,
+      "minWidth": 450,
+      "mobileBottomRow": 1171,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1248.1875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "80azdb9vc2",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1248.1875,
+      "tabId": "tabpq3lt2gwd3",
+      "tabName": "",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "cicihob8xi",
+      "widgetName": "Canvas116"
     }
   ],
   "defaultTab": "",
@@ -193,6 +238,13 @@
       "label": "Bản đồ tương tác",
       "positioning": "vertical",
       "widgetId": "x3ejcf9spq"
+    },
+    "tabpq3lt2gwd3": {
+      "id": "tabpq3lt2gwd3",
+      "index": 3,
+      "isVisible": true,
+      "label": "",
+      "widgetId": "cicihob8xi"
     },
     "tabtv06yri39q": {
       "id": "tabtv06yri39q",
