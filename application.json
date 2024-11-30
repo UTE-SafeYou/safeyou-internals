@@ -79,10 +79,6 @@
       "isDefault": false
     },
     {
-      "id": "InteractMap",
-      "isDefault": false
-    },
-    {
       "id": "User",
       "isDefault": false
     }
