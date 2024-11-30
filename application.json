@@ -28,40 +28,12 @@
   "color": "#FBF4ED",
   "embedSetting": {
     "height": "720px",
-    "showNavigationBar": false,
+    "showNavigationBar": true,
     "width": "1024px"
   },
   "evaluationVersion": 2,
   "icon": "globe",
   "pages": [
-    {
-      "id": "Restaurant Partners",
-      "isDefault": false
-    },
-    {
-      "id": "Driver Information",
-      "isDefault": false
-    },
-    {
-      "id": "Modules2",
-      "isDefault": false
-    },
-    {
-      "id": "Content2",
-      "isDefault": false
-    },
-    {
-      "id": "Modules",
-      "isDefault": false
-    },
-    {
-      "id": "Content",
-      "isDefault": false
-    },
-    {
-      "id": "Dashboard",
-      "isDefault": false
-    },
     {
       "id": "Admin authentication",
       "isDefault": true
@@ -80,6 +52,10 @@
     },
     {
       "id": "User",
+      "isDefault": false
+    },
+    {
+      "id": "Email verify",
       "isDefault": false
     }
   ],
