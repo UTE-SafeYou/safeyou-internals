@@ -1,0 +1,58 @@
+{
+  "activeColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "bottomRow": 15,
+  "defaultRate": "{{appsmith.store.partner.Review}}",
+  "displayName": "Rating",
+  "dynamicBindingPathList": [
+    {
+      "key": "activeColor"
+    },
+    {
+      "key": "defaultRate"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.914eb943f3f3762263872a333aff727d.svg",
+  "inactiveColor": "#E0DEDE",
+  "isAllowHalf": true,
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isReadOnly": true,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ywroca01dl",
+  "leftColumn": 42,
+  "maxCount": 5,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 7,
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
+  "parentColumnSpace": 9.9375,
+  "parentId": "092sz34yrh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 56,
+  "searchTags": [
+    "stars"
+  ],
+  "size": "LARGE",
+  "tooltips": [
+    "Terrible",
+    "Bad",
+    "Neutral",
+    "Good",
+    "Great"
+  ],
+  "topRow": 11,
+  "type": "RATE_WIDGET",
+  "widgetId": "kf65plyxcd",
+  "widgetName": "rat_partnerRatings"
+}

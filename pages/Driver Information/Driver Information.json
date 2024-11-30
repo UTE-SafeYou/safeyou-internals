@@ -1,22 +1,23 @@
 {
-  "gitSyncId": "674603f58ce42030fd49a9d1_c7a7d294-a2aa-4226-a91c-3f1f7a70d776",
+  "gitSyncId": "674603f58ce42030fd49a9d1_7b65c877-05ee-4ca2-8457-41aaefdcef9f",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 570,
+          "bottomRow": 940,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "minHeight": 580,
+          "minHeight": 860,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 56,
+          "snapRows": 84,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -25,7 +26,7 @@
         }
       }
     ],
-    "name": "Page2",
-    "slug": "page2"
+    "name": "Driver Information",
+    "slug": "driver-information"
   }
 }
