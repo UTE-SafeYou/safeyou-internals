@@ -1,1 +1,0 @@
-UPDATE customer SET status = 'PENDING DELETE' WHERE id = {{tbl_customers.selectedRow.id}}

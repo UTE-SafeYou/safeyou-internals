@@ -1,30 +1,39 @@
 {
   "animateLoading": true,
-  "borderRadius": "1.5rem",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 21,
-  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-  "buttonColor": "#ffffff",
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [],
-  "dynamicPropertyPathList": [
+  "dynamicBindingPathList": [
     {
-      "key": "buttonVariant"
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "b9rmgk9n8y",
-  "leftColumn": 28,
+  "leftColumn": 0,
   "minWidth": 120,
   "mobileBottomRow": 26,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 12,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
+  "onClick": "{{login_user.run().then(() => {\n  showAlert('Chào mừng bạn quay trở lại 👋', 'success');\n}).catch(() => {\n  showAlert('Sai mật khẩu hoặc email', 'error');\n});}}",
+  "originalBottomRow": 21,
+  "originalTopRow": 17,
   "parentColumnSpace": 10.4287109375,
   "parentId": "rh5ydyjopm",
   "parentRowSpace": 10,
@@ -33,11 +42,12 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 53,
-  "text": "Quên mật khẩu",
+  "rightColumn": 28,
+  "text": "Đăng nhập",
+  "tooltip": "",
   "topRow": 17,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "v3u1diai57",
+  "widgetId": "mpsezl7nj3",
   "widgetName": "loginButton"
 }
