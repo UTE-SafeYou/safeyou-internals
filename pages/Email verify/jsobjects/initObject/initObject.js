@@ -1,7 +1,7 @@
 export default {
 	verifyEmail: () => {
 		let params = appsmith.URL.queryParams;
-		console.log(params)
+		showAlert(JSON.stringify(params))
 		let token = params["verify-token"]
 		if(token) {
 			// call verify token edge function
@@ -11,6 +11,5 @@ export default {
 
 			// other wise, show error. And button to app
 		}
-		showAlert(JSON.stringify(params))
 	}
 }
