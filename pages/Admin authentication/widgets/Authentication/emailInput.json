@@ -16,6 +16,7 @@
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
+  "errorMessage": "Email đúng định dạng",
   "iconAlign": "left",
   "inputType": "EMAIL",
   "isDisabled": false,
@@ -54,5 +55,5 @@
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "hm3u0ut78i",
-  "widgetName": "Input1"
+  "widgetName": "emailInput"
 }

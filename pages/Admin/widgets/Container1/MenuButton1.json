@@ -1,0 +1,59 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "menuColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "label"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem3.onClick"
+    }
+  ],
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "8pxny9pc12",
+  "label": "{{appsmith.store.user_profile.fullname.split(' ').at(0)}}",
+  "leftColumn": 57,
+  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+  "menuItems": {
+    "menuItem3": {
+      "id": "menuItem3",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Đăng xuất",
+      "onClick": "{{showModal(confirmModal.name);}}",
+      "widgetId": ""
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 39,
+  "mobileRightColumn": 55,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 21.78125,
+  "parentId": "ebmnu8sr9a",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "topRow": 2,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "22qwqiqk08",
+  "widgetName": "MenuButton1"
+}
