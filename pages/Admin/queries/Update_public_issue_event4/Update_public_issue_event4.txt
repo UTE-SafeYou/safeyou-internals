@@ -1,0 +1,1 @@
+UPDATE public.issue_event SET "created_at"= '{{issueEventTable.updatedRow.created_at}}', "place_id"= '{{issueEventTable.updatedRow.place_id}}', "title"= '{{issueEventTable.updatedRow.title}}', "description"= '{{issueEventTable.updatedRow.description}}', "label"= '{{issueEventTable.updatedRow.label}}' WHERE "id"= {{issueEventTable.updatedRow.id}};

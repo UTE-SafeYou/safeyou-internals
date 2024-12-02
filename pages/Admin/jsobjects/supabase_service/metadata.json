@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "674cb708bc8d395f7d892e6d_18f7a674-495e-4ac8-a4a1-19bcc968a0b8",
+  "id": "Admin_supabase_service",
+  "unpublishedCollection": {
+    "name": "supabase_service",
+    "pageId": "Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

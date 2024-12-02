@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1\n\n",
-  "bottomRow": 128,
+  "bottomRow": 122,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "children": [
     {
@@ -93,7 +93,7 @@
       "rightColumn": 475.5,
       "shouldScrollContents": false,
       "tabId": "tab2",
-      "tabName": "Nhiệm vụ",
+      "tabName": "Cứu trợ",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -147,7 +147,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1140,
+      "bottomRow": 790,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -183,7 +183,7 @@
       "responsiveBehavior": "fill",
       "rightColumn": 1268,
       "tabId": "tabnp2oy9fhu0",
-      "tabName": "Gửi cảnh báo",
+      "tabName": "Hệ thống cảnh báo",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -191,7 +191,7 @@
       "widgetName": "Canvas118"
     }
   ],
-  "defaultTab": "Người dùng",
+  "defaultTab": "Hệ thống cảnh báo",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -200,7 +200,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
@@ -210,27 +210,28 @@
   "key": "wle4i6bzhf",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
-  "minDynamicHeight": 15,
+  "minDynamicHeight": 10,
   "minWidth": 450,
   "mobileBottomRow": 38,
   "mobileLeftColumn": 18,
   "mobileRightColumn": 42,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "originalBottomRow": 128,
-  "originalTopRow": 10,
+  "originalBottomRow": 122,
+  "originalTopRow": 39,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 62,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
     "tab1": {
       "id": "tab1",
-      "index": 0,
+      "index": 1,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Người dùng",
       "positioning": "vertical",
@@ -238,28 +239,31 @@
     },
     "tab2": {
       "id": "tab2",
-      "index": 1,
+      "index": 2,
+      "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "Nhiệm vụ",
+      "label": "Cứu trợ",
       "positioning": "vertical",
       "widgetId": "57vnwet4e3"
     },
     "tabnp2oy9fhu0": {
       "id": "tabnp2oy9fhu0",
-      "index": 3,
+      "index": 0,
+      "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "Gửi cảnh báo",
+      "label": "Hệ thống cảnh báo",
       "widgetId": "2piyiuyjtn"
     },
     "tabtv06yri39q": {
       "id": "tabtv06yri39q",
-      "index": 2,
+      "index": 3,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Kiểm duyệt",
       "widgetId": "xzj99mhd4c"
     }
   },
-  "topRow": 10,
+  "topRow": 39,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "clqsj917u0",

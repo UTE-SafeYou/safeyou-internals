@@ -1,0 +1,1 @@
+INSERT INTO public.issue_event ("created_at","place_id","title","description","label") VALUES ('{{(issueEventTable.newRow || {}).created_at}}','{{(issueEventTable.newRow || {}).place_id}}','{{(issueEventTable.newRow || {}).title}}','{{(issueEventTable.newRow || {}).description}}','{{(issueEventTable.newRow || {}).label}}')

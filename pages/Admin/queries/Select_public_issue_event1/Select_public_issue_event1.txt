@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.issue_event
+WHERE
+  "title" ilike '%{{issueEventTable.searchText}}%'
+ORDER BY
+  "{{issueEventTable.sortOrder.column || 'id'}}" {{issueEventTable.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{issueEventTable.pageSize}}
+OFFSET
+  {{issueEventTable.pageOffset}}
