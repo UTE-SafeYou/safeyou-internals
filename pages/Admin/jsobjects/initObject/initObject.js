@@ -1,4 +1,17 @@
 export default {
+
+
+	uuidv4() {
+		return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'
+			.replace(/[xy]/g, function (c) {
+			const r = Math.random() * 16 | 0, 
+						v = c == 'x' ? r : (r & 0x3 | 0x8);
+			return v.toString(16);
+		});
+	},
+	async updateLocation(latitude, longitude) {
+		storeValue("currentLocation", {latitude, longitude})
+	},
 	async initData() {
 		const supabase = supabase_service.supabaseProvider();
 
@@ -8,9 +21,13 @@ export default {
 
 		storeValue("issueEvents", initIssueData);
 	},
-	initRealtimeConnection () {
+	async initRealtimeConnection () {
 		// Get init data
 		const supabase = supabase_service.supabaseProvider();
+
+		const { data } = await supabase.rpc('get_places_with_lat_lon')
+		console.log(data);
+
 		// Create a function to handle inserts
 		const handleInserts = (payload) => {
 			let currentIssueEvents = appsmith.store.issueEvents;
