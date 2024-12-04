@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 52,
+  "bottomRow": 49,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -37,13 +37,13 @@
     "lon",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1733293096462,
+  "columnUpdatedAt": 1733298060607,
   "columnWidthMap": {
     "coords": 63,
     "customColumn1": 232,
     "hello": 78,
-    "place": 209,
-    "radius": 60
+    "place": 154,
+    "radius": 103
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -70,6 +70,15 @@
       "key": "primaryColumns.radius.computedValue"
     },
     {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.lat.computedValue"
+    },
+    {
+      "key": "primaryColumns.lon.computedValue"
+    },
+    {
       "key": "primaryColumns.EditActions1.saveButtonColor"
     },
     {
@@ -83,15 +92,6 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
-    },
-    {
-      "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.lat.computedValue"
-    },
-    {
-      "key": "primaryColumns.lon.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -99,18 +99,21 @@
       "key": "tableData"
     },
     {
+      "key": "primaryColumns.radius.textSize"
+    },
+    {
       "key": "primaryColumns.EditActions1.isSaveDisabled"
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
-    },
-    {
-      "key": "primaryColumns.radius.textSize"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.EditActions1.onSave"
     }
   ],
   "enableClientSideSearch": true,
@@ -134,7 +137,7 @@
   "mobileTopRow": 13,
   "needsErrorInfo": false,
   "onRowSelected": "",
-  "originalBottomRow": 52,
+  "originalBottomRow": 49,
   "originalTopRow": 18,
   "parentColumnSpace": 20.3393798828125,
   "parentId": "1jm3m82ctf",
@@ -151,7 +154,7 @@
       "currencyCode": "USD",
       "decimals": 0,
       "discardActionLabel": "Discard",
-      "discardBorderRadius": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "discardBorderRadius": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "discardButtonColor": "#F22B2B",
       "discardButtonVariant": "TERTIARY",
       "discardIconAlign": "left",
@@ -163,18 +166,19 @@
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
-      "isDiscardDisabled": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( !Table3.updatedRowIndices.includes(currentIndex)))}}",
+      "isDiscardDisabled": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( !placeTable.updatedRowIndices.includes(currentIndex)))}}",
       "isDiscardVisible": true,
       "isEditable": false,
-      "isSaveDisabled": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( !Table3.updatedRowIndices.includes(currentIndex)))}}",
-      "isSaveVisible": true,
+      "isSaveDisabled": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( !placeTable.updatedRowIndices.includes(currentIndex)))}}",
+      "isSaveVisible": false,
       "isVisible": true,
-      "label": "Save / Discard",
+      "label": "Tùy chọn",
       "notation": "standard",
+      "onSave": "{{issueEventObject.updatePlace();}}",
       "originalId": "EditActions1",
       "saveActionLabel": "Save",
-      "saveBorderRadius": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "saveButtonColor": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "saveBorderRadius": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "saveButtonColor": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "saveIconAlign": "left",
       "sticky": "right",
       "thousandSeparator": true,
@@ -187,7 +191,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lat\"]))}}",
+      "computedValue": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lat\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -221,7 +225,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lon\"]))}}",
+      "computedValue": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lon\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -255,7 +259,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"place\"]))}}",
+      "computedValue": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"place\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -289,7 +293,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"radius\"]))}}",
+      "computedValue": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"radius\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -331,5 +335,5 @@
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "h0uteuwqkp",
-  "widgetName": "Table3"
+  "widgetName": "placeTable"
 }

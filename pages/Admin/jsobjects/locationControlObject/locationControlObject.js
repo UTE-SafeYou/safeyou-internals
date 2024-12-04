@@ -9,6 +9,13 @@ export default {
 
 		})
 	},
+	updateLocationState(lat, lon) {
+		storeValue("locationState", {
+			latitude:lat,
+			longitude: lon,
+			_session: initObject.uuidv4()
+		})
+	},
 	updateRadius() {
 	}
 }

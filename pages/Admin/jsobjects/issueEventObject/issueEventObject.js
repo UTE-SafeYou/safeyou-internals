@@ -1,6 +1,6 @@
 export default {
 	places:  [{
-		place: latLonToLocation?.data?.results[0]?.address || "",
+		place: !latLonToLocation ? "" : latLonToLocation.data.results[0].address,
 		radius: radiusInput.text || "",
 		lat: appsmith.store.locationState.latitude || "",
 		lon: appsmith.store.locationState.longitude || ""
@@ -15,9 +15,15 @@ export default {
 		issueEventObject.places =  []
 	},
 	addIssuePlace() {
+		try{
+
+			var currentAddress = !latLonToLocation?.data ? null: latLonToLocation.data?.results[0]?.address;
+		} catch (err) {
+			showAlert(err);
+		}
 		let currentPlaces = issueEventObject.places || [];
 		let newPlaces = [...currentPlaces, {
-			place: latLonToLocation?.data?.results[0]?.address,
+			place: currentAddress ? currentAddress : "Vị trí mặc định",
 			radius: radiusInput.text,
 			lat: appsmith.store.locationState.latitude,
 			lon: appsmith.store.locationState.longitude
@@ -27,7 +33,7 @@ export default {
 		issueEventObject.places = newPlaces;
 	},
 	updateCurrentPlace() {
-		
+
 	}
 
 }

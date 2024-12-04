@@ -9,9 +9,6 @@ export default {
 			return v.toString(16);
 		});
 	},
-	async updateLocation(latitude, longitude) {
-		storeValue("currentLocation", {latitude, longitude})
-	},
 	async initData() {
 		const supabase = supabase_service.supabaseProvider();
 
