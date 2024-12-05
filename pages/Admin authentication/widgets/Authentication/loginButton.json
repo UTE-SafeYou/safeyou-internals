@@ -37,7 +37,7 @@
   "mobileTopRow": 33,
   "needsErrorInfo": false,
   "onClick": "{{login_user.run().then(() => {\n  authObject.loginButtononClick();\n  showAlert('Chào mừng bạn quay trở lại 👋', '');\n  navigateTo('Admin', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Sai mật khẩu hoặc email', 'error');\n});}}",
-  "originalBottomRow": 25,
+  "originalBottomRow": 26,
   "originalTopRow": 21,
   "parentId": "jq72h5k81j",
   "placement": "CENTER",

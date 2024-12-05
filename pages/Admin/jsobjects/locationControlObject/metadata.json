@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "674cb708bc8d395f7d892e6d_5989233e-e5d9-48e4-a7f4-4e18f5f7a1de",
+  "id": "Admin_locationControlObject",
+  "unpublishedCollection": {
+    "name": "locationControlObject",
+    "pageId": "Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

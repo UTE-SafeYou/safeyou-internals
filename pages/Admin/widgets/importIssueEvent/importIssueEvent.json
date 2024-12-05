@@ -1,0 +1,88 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 65,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 650,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "v1pk2n467q",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 730,
+      "minWidth": 450,
+      "mobileBottomRow": 0,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 0,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "qa8eq7ic7z",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 0,
+      "shouldScrollContents": false,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "x9a7gyrbud",
+      "widgetName": "Canvas123"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "height": 650,
+  "isCanvas": true,
+  "isLoading": false,
+  "key": "62v5n8s8nj",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minHeight": 650,
+  "mobileBottomRow": 0,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 0,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "originalBottomRow": 73,
+  "originalTopRow": 0,
+  "parentColumnSpace": 1,
+  "parentId": "0",
+  "parentRowSpace": 1,
+  "renderMode": "CANVAS",
+  "rightColumn": 0,
+  "shouldScrollContents": true,
+  "topRow": 0,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "qa8eq7ic7z",
+  "widgetName": "importIssueEvent",
+  "width": 1235
+}

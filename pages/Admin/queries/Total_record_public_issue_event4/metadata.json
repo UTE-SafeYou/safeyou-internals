@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Total_record_public_issue_event4",
     "pageId": "Admin",
     "userSetOnLoad": false

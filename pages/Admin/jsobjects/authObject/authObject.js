@@ -4,7 +4,7 @@ export default {
 		let old_profile = appsmith.store.user_profile;
 		removeValue("access_token");
 		removeValue("user_profile");
-		
 		navigateTo("User authentication")
+		
 	}
 }
