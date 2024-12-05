@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 37,
   "boxShadow": "none",
-  "defaultOptionValue": "HIGH",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -45,7 +45,7 @@
   "originalBottomRow": 37,
   "originalTopRow": 30,
   "parentColumnSpace": 8.095703125,
-  "parentId": "r59biap745",
+  "parentId": "lwne3y9cye",
   "parentRowSpace": 10,
   "placeholderText": "Lựa chọn ",
   "renderMode": "CANVAS",
@@ -56,6 +56,6 @@
   "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "174e3tmqi5",
+  "widgetId": "cjqtwy6y8u",
   "widgetName": "slKhanCap"
 }
