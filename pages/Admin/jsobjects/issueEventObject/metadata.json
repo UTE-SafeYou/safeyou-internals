@@ -6,11 +6,6 @@
     "pageId": "Admin",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": [
-      {
-        "name": "places",
-        "value": "[{\n  place: !latLonToLocation ? \"\" : latLonToLocation.data.results[0].address,\n  radius: radiusInput.text || \"\",\n  lat: appsmith.store.locationState.latitude || \"\",\n  lon: appsmith.store.locationState.longitude || \"\"\n}]"
-      }
-    ]
+    "variables": []
   }
 }

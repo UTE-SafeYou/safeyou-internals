@@ -5,12 +5,12 @@
   "borderColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 61,
+  "bottomRow": 63,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 510,
+      "bottomRow": 530,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -47,7 +47,7 @@
       "rightColumn": 275.72578125,
       "shouldScrollContents": false,
       "tabId": "tab1",
-      "tabName": "Địa điểm",
+      "tabName": "1. Địa điểm",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 510,
+      "bottomRow": 970,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -93,7 +93,7 @@
       "rightColumn": 275.72578125,
       "shouldScrollContents": false,
       "tabId": "tab2",
-      "tabName": "Đính kèm",
+      "tabName": "3. Đính kèm",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -102,7 +102,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 570,
+      "bottomRow": 590,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -138,15 +138,60 @@
       "responsiveBehavior": "fill",
       "rightColumn": 723.78017578125,
       "tabId": "tabz06wwi3tym",
-      "tabName": "Thông tin chi tiết",
+      "tabName": "2. Thông tin chi tiết",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
       "widgetId": "echsw57jan",
       "widgetName": "Canvas129"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 530,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "9z4ig68fy7",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 570,
+      "minWidth": 450,
+      "mobileBottomRow": 571,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 735.2687500000001,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "6f4z6qs79a",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 735.2687500000001,
+      "tabId": "tab12lq5v827f",
+      "tabName": "4. Tổng hợp",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "aal4u9khci",
+      "widgetName": "Canvas144"
     }
   ],
-  "defaultTab": "Địa điểm",
+  "defaultTab": "1. Địa điểm",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -171,7 +216,7 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "originalBottomRow": 61,
+  "originalBottomRow": 63,
   "originalTopRow": 6,
   "parentColumnSpace": 11.488574218750001,
   "parentId": "x9a7gyrbud",
@@ -187,16 +232,23 @@
       "index": 0,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "Địa điểm",
+      "label": "1. Địa điểm",
       "positioning": "vertical",
       "widgetId": "1jm3m82ctf"
+    },
+    "tab12lq5v827f": {
+      "id": "tab12lq5v827f",
+      "index": 3,
+      "isVisible": true,
+      "label": "4. Tổng hợp",
+      "widgetId": "aal4u9khci"
     },
     "tab2": {
       "id": "tab2",
       "index": 2,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "Đính kèm",
+      "label": "3. Đính kèm",
       "positioning": "vertical",
       "widgetId": "9ymi8abxdp"
     },
@@ -205,7 +257,7 @@
       "index": 1,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "Thông tin chi tiết",
+      "label": "2. Thông tin chi tiết",
       "widgetId": "echsw57jan"
     }
   },

@@ -1,11 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
+  "animateLoading": false,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1\n\n",
-  "bottomRow": 20,
+  "bottomRow": 58,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "children": [
     {
@@ -47,7 +47,7 @@
       "rightColumn": 475.5,
       "shouldScrollContents": false,
       "tabId": "tab1",
-      "tabName": "USER",
+      "tabName": "Người dùng",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -93,7 +93,7 @@
       "rightColumn": 475.5,
       "shouldScrollContents": false,
       "tabId": "tab2",
-      "tabName": "SUPPORT",
+      "tabName": "Tình nguyện viên",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -138,7 +138,7 @@
       "responsiveBehavior": "fill",
       "rightColumn": 1268,
       "tabId": "tabtv06yri39q",
-      "tabName": "MODERATOR",
+      "tabName": "Đóng góp",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -147,7 +147,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 100,
+      "bottomRow": 480,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -183,21 +183,69 @@
       "responsiveBehavior": "fill",
       "rightColumn": 1268,
       "tabId": "tabnp2oy9fhu0",
-      "tabName": "ALERT",
+      "tabName": "Hệ thống cảnh báo",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
       "widgetId": "2piyiuyjtn",
       "widgetName": "Canvas118"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 480,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "9z4ig68fy7",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 100,
+      "minWidth": 450,
+      "mobileBottomRow": 101,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1268,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "clqsj917u0",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1268,
+      "tabId": "tabfbj047npep",
+      "tabName": "Cổng thông tin",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "bmmrjqf6r9",
+      "widgetName": "Canvas145"
     }
   ],
-  "defaultTab": "Hệ thống cảnh báo",
+  "defaultTab": "{{navigationTab.selectedTab}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultTab"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -217,7 +265,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "originalBottomRow": 20,
+  "originalBottomRow": 58,
   "originalTopRow": 10,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -233,7 +281,7 @@
       "index": 1,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "USER",
+      "label": "Người dùng",
       "positioning": "vertical",
       "widgetId": "5uda0537ki"
     },
@@ -242,16 +290,23 @@
       "index": 2,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "SUPPORT",
+      "label": "Tình nguyện viên",
       "positioning": "vertical",
       "widgetId": "57vnwet4e3"
+    },
+    "tabfbj047npep": {
+      "id": "tabfbj047npep",
+      "index": 4,
+      "isVisible": true,
+      "label": "Cổng thông tin",
+      "widgetId": "bmmrjqf6r9"
     },
     "tabnp2oy9fhu0": {
       "id": "tabnp2oy9fhu0",
       "index": 0,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "ALERT",
+      "label": "Hệ thống cảnh báo",
       "widgetId": "2piyiuyjtn"
     },
     "tabtv06yri39q": {
@@ -259,7 +314,7 @@
       "index": 3,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "MODERATOR",
+      "label": "Đóng góp",
       "widgetId": "xzj99mhd4c"
     }
   },

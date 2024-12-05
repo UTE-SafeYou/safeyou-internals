@@ -1,18 +1,6 @@
 export default {
-	places:  [{
-		place: !latLonToLocation ? "" : latLonToLocation.data.results[0].address,
-		radius: radiusInput.text || "",
-		lat: appsmith.store.locationState.latitude || "",
-		lon: appsmith.store.locationState.longitude || ""
-	}],
-	updateRadius(event) {
-		showAlert(event)
-	},
-	getPlaces() {
-		return  []
-	},
 	initPlaces() {
-		issueEventObject.places =  []
+		storeValue("issuePlace", []);
 	},
 	addIssuePlace() {
 		try{
@@ -21,8 +9,9 @@ export default {
 		} catch (err) {
 			showAlert(err);
 		}
-		let currentPlaces = issueEventObject.places || [];
+		let currentPlaces = appsmith.store.issuePlace || [];
 		let newPlaces = [...currentPlaces, {
+			id: initObject.uuidv4(),
 			place: currentAddress ? currentAddress : "Vị trí mặc định",
 			radius: radiusInput.text,
 			lat: appsmith.store.locationState.latitude,
@@ -30,10 +19,10 @@ export default {
 		}];
 		radiusInput.setValue("");
 
-		issueEventObject.places = newPlaces;
+		storeValue("issuePlace", newPlaces);
 	},
-	updateCurrentPlace() {
-
-	}
+	// updateCurrentPlace() {
+	// 
+	// }
 
 }

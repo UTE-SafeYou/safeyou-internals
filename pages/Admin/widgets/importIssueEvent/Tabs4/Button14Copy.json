@@ -1,52 +1,46 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 10,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#2563eb",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
-    },
-    {
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "iconName": "locate",
+  "iconName": "asterisk",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "161t6fqo59",
-  "leftColumn": 0,
+  "key": "atoubkjlir",
+  "leftColumn": 52,
   "minWidth": 120,
-  "mobileBottomRow": 17,
-  "mobileLeftColumn": 47,
-  "mobileRightColumn": 63,
-  "mobileTopRow": 13,
+  "mobileBottomRow": 64,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 60,
   "needsErrorInfo": false,
-  "onClick": "{{locationControlObject.getLocationButtononClick();}}",
-  "parentColumnSpace": 24.7203125,
-  "parentId": "1jm3m82ctf",
+  "originalBottomRow": 71,
+  "originalTopRow": 67,
+  "parentColumnSpace": 24.4078125,
+  "parentId": "9ymi8abxdp",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 33,
-  "text": "Vị trí hiện tại",
-  "topRow": 0,
+  "rightColumn": 63,
+  "text": "Tìm tự động",
+  "topRow": 6,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "y5trlpimcc",
-  "widgetName": "getLocationButton"
+  "widgetId": "bdtn14k8bl",
+  "widgetName": "Button14Copy"
 }

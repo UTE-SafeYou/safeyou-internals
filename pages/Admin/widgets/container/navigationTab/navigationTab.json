@@ -243,7 +243,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTabSelected"
+    }
+  ],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
@@ -258,6 +262,7 @@
   "mobileRightColumn": 48,
   "mobileTopRow": 26,
   "needsErrorInfo": false,
+  "onTabSelected": "",
   "originalBottomRow": 30,
   "originalTopRow": 26,
   "parentColumnSpace": 16.84375,
@@ -311,5 +316,5 @@
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "xb7fq47mv6",
-  "widgetName": "Tabs5"
+  "widgetName": "navigationTab"
 }

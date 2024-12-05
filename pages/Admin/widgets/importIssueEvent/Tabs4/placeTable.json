@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 49,
+  "bottomRow": 51,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -31,19 +31,21 @@
     }
   },
   "columnOrder": [
-    "radius",
     "place",
+    "radius",
     "lat",
     "lon",
+    "id",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1733298060607,
+  "columnUpdatedAt": 1733380660729,
   "columnWidthMap": {
     "coords": 63,
     "customColumn1": 232,
     "hello": 78,
-    "place": 154,
-    "radius": 103
+    "lat": 254,
+    "place": 343,
+    "radius": 588
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -64,21 +66,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "primaryColumns.place.computedValue"
-    },
-    {
-      "key": "primaryColumns.radius.computedValue"
-    },
-    {
-      "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.lat.computedValue"
-    },
-    {
-      "key": "primaryColumns.lon.computedValue"
-    },
-    {
       "key": "primaryColumns.EditActions1.saveButtonColor"
     },
     {
@@ -92,20 +79,35 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
-    }
-  ],
-  "dynamicPropertyPathList": [
+    },
     {
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.radius.textSize"
+      "key": "primaryColumns.place.computedValue"
     },
+    {
+      "key": "primaryColumns.radius.computedValue"
+    },
+    {
+      "key": "primaryColumns.lat.computedValue"
+    },
+    {
+      "key": "primaryColumns.lon.computedValue"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
     {
       "key": "primaryColumns.EditActions1.isSaveDisabled"
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -129,7 +131,7 @@
   "isVisibleSearch": true,
   "key": "qlgrzmr8sj",
   "label": "Data",
-  "leftColumn": 34,
+  "leftColumn": 33,
   "minWidth": 450,
   "mobileBottomRow": 41,
   "mobileLeftColumn": 24,
@@ -137,7 +139,7 @@
   "mobileTopRow": 13,
   "needsErrorInfo": false,
   "onRowSelected": "",
-  "originalBottomRow": 49,
+  "originalBottomRow": 51,
   "originalTopRow": 18,
   "parentColumnSpace": 20.3393798828125,
   "parentId": "1jm3m82ctf",
@@ -183,6 +185,40 @@
       "sticky": "right",
       "thousandSeparator": true,
       "validation": {},
+      "width": 150
+    },
+    "id": {
+      "alias": "id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "id",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "id",
+      "notation": "standard",
+      "originalId": "id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
       "width": 150
     },
     "lat": {
@@ -268,12 +304,12 @@
       "horizontalAlignment": "LEFT",
       "id": "place",
       "index": 0,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Địa điểm",
@@ -292,7 +328,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
+      "columnType": "text",
       "computedValue": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"radius\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -302,12 +338,12 @@
       "horizontalAlignment": "LEFT",
       "id": "radius",
       "index": 1,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Bán kính",
@@ -315,7 +351,7 @@
       "originalId": "radius",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.8rem",
+      "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -327,7 +363,7 @@
   "rightColumn": 64,
   "searchKey": "",
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{issueEventObject.places}}",
+  "tableData": "{{appsmith.store.issuePlace}}",
   "textSize": "0.875rem",
   "topRow": 18,
   "totalRecordsCount": 0,
