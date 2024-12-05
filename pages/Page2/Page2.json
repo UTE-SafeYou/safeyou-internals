@@ -1,12 +1,11 @@
 {
-  "gitSyncId": "674603f58ce42030fd49a9d1_66e716b5-0617-45a6-afcc-074dccd0bc09",
+  "gitSyncId": "6751826d7f806e6071e750a9_2f5517c5-97ff-46de-8745-79a1b73b2a32",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1360,
+          "bottomRow": 990,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +25,7 @@
         }
       }
     ],
-    "name": "Admin",
-    "slug": "admin"
+    "name": "Page2",
+    "slug": "page2"
   }
 }

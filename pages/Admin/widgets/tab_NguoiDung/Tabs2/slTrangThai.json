@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 37,
   "boxShadow": "none",
-  "defaultOptionValue": "HIGH",
+  "defaultOptionValue": "TODO",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -28,10 +28,10 @@
   "key": "gddgwgnz0v",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Mức độ khẩn cấp",
+  "labelText": "Trạng thái",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 32,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -47,15 +47,15 @@
   "parentColumnSpace": 8.095703125,
   "parentId": "r59biap745",
   "parentRowSpace": 10,
-  "placeholderText": "Lựa chọn ",
+  "placeholderText": "Lựa chọn",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 26,
+  "rightColumn": 60,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Khẩn cấp\",\n    \"code\": \"HIGH\"\n  },\n  {\n    \"name\": \"Trung bình\",\n    \"code\": \"MEDIUM\"\n  },\n  {\n    \"name\": \"Chậm\",\n    \"code\": \"SLOW\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"Mới giao\",\n    \"code\": \"TODO\"\n  },\n  {\n    \"name\": \"Đang làm\",\n    \"code\": \"DOING\"\n  },\n  {\n    \"name\": \"Đã hoàn thành\",\n    \"code\": \"DONE\"\n  }, \n\t{\n\t\t\"name\": \"Không hoàn thành\",\n\t\t\"code\": \"MISS\"\n\t}\n]",
   "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "174e3tmqi5",
-  "widgetName": "slKhanCap"
+  "widgetId": "6kg8ma9ehb",
+  "widgetName": "slTrangThai"
 }

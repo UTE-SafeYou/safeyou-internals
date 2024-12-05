@@ -1,0 +1,19 @@
+{
+	"address": {
+		"street_number": {{txtSoNha.text}},
+		"street": {{txtDuong.text}},
+		"ward": {{txtPhuong.text}},
+		"city": {{txtThanhPho.text}},
+		"district": {{txtQuan.text}}
+	},
+	"task": {
+		"title": {{txtTenNV.text}},
+		"description": {{txtChiTiet.text}},
+		"required_skills": {{txtKiNang.text}},
+		"urgency": {{slKhanCap.selectedOptionValue}},
+		"start_date": {{dpNgayBatDau.selectedDate}},
+		"end_date": {{dpNgayKetThuc.selectedDate}},
+		"task_status": {{slTrangThai.selectedOptionValue}}
+	}
+
+}
