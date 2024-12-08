@@ -1,0 +1,5 @@
+ {
+    "latitude": 10.369981,
+    "longitude": 106.36501,
+    "radius": 100
+}
