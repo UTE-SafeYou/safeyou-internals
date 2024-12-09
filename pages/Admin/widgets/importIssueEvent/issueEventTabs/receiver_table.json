@@ -325,7 +325,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "searchKey": "",
-  "tableData": "{{get_user_in_places.data}}",
+  "tableData": "{{get_user_in_places?.data?.flat() || []}}",
   "textSize": "0.875rem",
   "topRow": 17,
   "totalRecordsCount": 0,

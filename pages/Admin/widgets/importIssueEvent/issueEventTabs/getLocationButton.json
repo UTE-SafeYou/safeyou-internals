@@ -42,7 +42,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 29.999999999999996,
+  "rightColumn": 30,
   "text": "Vị trí hiện tại",
   "topRow": 0,
   "type": "BUTTON_WIDGET",

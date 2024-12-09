@@ -4,13 +4,85 @@ export default {
 	},
 	async createIssueEvent() {
 		// Create places 
-		showAlert(JSON.stringify(appsmith.store.issuePlaces));
-		insert_places.run(
-		)
+		// Chuyển sang đơn vị vật lý là mét
+		let issuePlaces = appsmith.store.issuePlace;
+		let submitIssuePlaces = issuePlaces.map(
+			item => ({
+				radius: item.radius * 1000, // meter
+				lattitude: item.lat,
+				longitude: item.lon,
+				"location": {"type": "Point", "coordinates": [item.lat, item.lon]},
+				place_type: issueType.selectedOptionLabel,
+				additional_info: {place: item.place, title: issueTitle.text, description: issueDescription.text}
+			})
+		);
+		try {
+
+			await insert_places.run({
+				places: submitIssuePlaces
+			});
+
+			let place_ids = insert_places.data;
+
+			showAlert("Thiết lập địa điểm", "success");
+			await insert_issue_event_with_places.run({
+				title: issueTitle.text,
+				place_ids: place_ids,
+				label: issueType.selectedOptionLabel,
+				description: issueDescription.text
+			})
+			let newIssue = insert_issue_event_with_places.data;
+			showAlert("Thiết lập cảnh báo", "success");
+
+			// Trigger cho webhook về issueId
+			let issue_link = 'https://olp-asm.huuloc.id.vn/app/safeyou-internals/admin-67543a23fd51167a0308d7b8/edit/jsObjects/67543a23fd51167a0308d7ec?branch=feat%252Fblog';
+			// Trigger notification system
+
+			await send_issue_automation.run({
+				title: issueTitle.text,
+				body: `
+					<h1>${issueTitle.text}</h1>
+					<br/>
+					<p>${issueDescription.text}</p>
+					<br/>
+					Cập nhật thời gian thực cho tình huống này: <a href={${issue_link}}>Tổng hợp thông tin cho tình huống này</a>
+				`,
+				users: receiver_table.tableData,
+				notification_type: "Emergency"
+			});
+			showAlert("Hoàn tất", "success");
+			closeModal("importIssueEvent");
+
+		} catch (error) {
+			showAlert(error.message +  " Thiết lập thất bại", "error");
+			return;
+		}
+
 	},
-	updateWizardStep() {
+	savePlaceTable: () => {
+		let data = appsmith.store.issuePlace;
+		let newRow = placeTable.updatedRow;
+		let newData = data.map(item => {
+			if(item.id == newRow.id) {
+				item = newRow;
+			}
+			return item;
+		})
+		storeValue("issuePlace", newData);	
+	},
+	updateWizardStep: async () => {
 		if(issueEventTabs.selectedTab ==="3. Tổng hợp") {
-			get_user_in_places.run();
+			let currentPlaces = appsmith.store.issuePlace;
+			let queryPlaces = currentPlaces.map(item=>{
+				return {
+					longitude: item.lon, 
+					latitude: item.lat,
+					radius: item.radius * 1000
+				}
+			})
+			await get_user_in_places.run({
+				places: queryPlaces
+			});
 		}
 	},
 	deleteIssuePlace(row_id) {

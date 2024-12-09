@@ -1,0 +1,6 @@
+{{{
+	"notification_type": this.params.notification_type,
+	"title": this.params.title,
+	"body": this.params.body,
+	"users": this.params.users
+}}}

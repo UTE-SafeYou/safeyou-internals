@@ -52,10 +52,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Thiên tai\",\n    \"code\": \"DISASTER\"\n  },\n  {\n    \"name\": \"Lây nhiễm\",\n    \"code\": \"PANDEMIC\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"thiên tai\",\n    \"code\": \"DISASTER\"\n  },\n  {\n    \"name\": \"dịch bệnh\",\n    \"code\": \"PANDEMIC\"\n  }\n]",
   "topRow": 7,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "7el7gjaxcj",
-  "widgetName": "Select1"
+  "widgetName": "issueType"
 }

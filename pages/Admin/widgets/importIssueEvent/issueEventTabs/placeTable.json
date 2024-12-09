@@ -99,6 +99,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -121,6 +124,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.radius.onSubmit"
     }
   ],
   "enableClientSideSearch": true,
@@ -197,7 +203,7 @@
       "alias": "Thao tác",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "buttonColor": "#ef4444",
+      "buttonColor": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonLabel": "Xóa",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "PRIMARY",
@@ -221,7 +227,7 @@
       "isVisible": true,
       "label": "Thao tác",
       "labelColor": "#FFFFFF",
-      "menuButtonLabel": "Open Menu",
+      "menuButtonLabel": "Xóa",
       "menuButtoniconName": "menu",
       "menuItems": {
         "menuItemmapdku0yjh": {
@@ -229,7 +235,7 @@
           "index": 0,
           "isDisabled": false,
           "isVisible": true,
-          "label": "Xóa",
+          "label": "",
           "widgetId": "1ecqy7hek7"
         }
       },
@@ -386,7 +392,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"radius\"]))}}",
+      "computedValue": "{{placeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"radius\"] ))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -405,6 +411,7 @@
       "isVisible": true,
       "label": "Bán kính",
       "notation": "standard",
+      "onSubmit": "{{issueEventObject.savePlaceTable();}}",
       "originalId": "radius",
       "sticky": "",
       "textColor": "",

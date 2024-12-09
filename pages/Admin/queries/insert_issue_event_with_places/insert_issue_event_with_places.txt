@@ -1,0 +1,6 @@
+{{{ 
+	"_description": this.params.description,
+	"_label": this.params.label,
+	"_place_ids": this.params.place_ids, 
+	"_title": this.params.title 
+}}}

@@ -1,1 +1,3 @@
-{{this.params.places}}
+{
+	places_input: {{this.params.places}}
+}
