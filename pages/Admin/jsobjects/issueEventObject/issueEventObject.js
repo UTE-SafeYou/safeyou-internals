@@ -2,7 +2,47 @@ export default {
 	initPlaces() {
 		storeValue("issuePlace", []);
 	},
+	async composeIssueEventDetail(e) {
+		// Toj 
+		let issue_event_id = e.id || null;
+		if(issue_event_id) {
+			await get_issue_events_and_places.run({
+				issue_event_id:issue_event_id 
+			});
+			storeValue("showDetail", true);
+			issueDetail_placeTable.setData(get_issue_events_and_places.data);
+		} else {
+			showAlert("Lỗi khi mở chi tiết", "error");
+		}
+
+
+	}, 
+	async updateIssueEvent() {
+		let {id, ...newIssueEvent} = issueTable.updatedRow;
+		await update_issue_events.run({
+			id: id,
+			newIssueEvent: newIssueEvent
+		});
+
+
+	},
+	async deleteIssueEvent() {
+
+	},
+	clearForm() {
+		resetWidget("issueType");
+		resetWidget("issueTitle");
+		resetWidget("issueDescription");
+	},
+	formValidate() {
+		return issueTitle.text.length > 0 && issueDescription.text.length > 0 && issueType.selectedOptionLabel != null;
+	},
 	async createIssueEvent() {
+
+		if(!issueEventObject.formValidate()) {
+			showAlert("Vui lòng điền đầy đủ thông tin", "error");
+			return;
+		}
 		// Create places 
 		// Chuyển sang đơn vị vật lý là mét
 		let issuePlaces = appsmith.store.issuePlace;
@@ -16,6 +56,8 @@ export default {
 				additional_info: {place: item.place, title: issueTitle.text, description: issueDescription.text}
 			})
 		);
+
+
 		try {
 
 			await insert_places.run({
@@ -51,7 +93,11 @@ export default {
 				notification_type: "Emergency"
 			});
 			showAlert("Hoàn tất", "success");
-			closeModal("importIssueEvent");
+			closeModal(importIssueEvent.name);
+
+			// Clear form
+			issueEventObject.clearForm();
+
 
 		} catch (error) {
 			showAlert(error.message +  " Thiết lập thất bại", "error");

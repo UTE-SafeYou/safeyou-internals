@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 13,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -19,7 +19,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "nf5ngvo9vw",
-  "leftColumn": 2,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
@@ -27,7 +27,7 @@
   "parentId": "ltt08fq75j",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 36,
+  "rightColumn": 41,
   "searchTags": [
     "typography",
     "paragraph",
@@ -37,7 +37,7 @@
   "text": "Quản lý người dùng trên ứng dụng",
   "textAlign": "LEFT",
   "textColor": "#9BA0B0",
-  "topRow": 11,
+  "topRow": 9,
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,

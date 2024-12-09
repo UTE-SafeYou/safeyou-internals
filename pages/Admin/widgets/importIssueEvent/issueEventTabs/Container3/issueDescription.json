@@ -16,7 +16,7 @@
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isToolbarHidden": true,
   "isVisible": true,
   "key": "rjfb99zyw5",

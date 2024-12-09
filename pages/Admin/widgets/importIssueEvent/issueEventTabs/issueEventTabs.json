@@ -175,7 +175,7 @@
   "mobileTopRow": 14,
   "needsErrorInfo": false,
   "onTabSelected": "{{issueEventObject.updateWizardStep();}}",
-  "originalBottomRow": 68,
+  "originalBottomRow": 70,
   "originalTopRow": 5,
   "parentColumnSpace": 11.488574218750001,
   "parentId": "x9a7gyrbud",
