@@ -35,27 +35,11 @@
   "icon": "globe",
   "pages": [
     {
-      "id": "Admin authentication",
+      "id": "Login",
       "isDefault": true
     },
     {
-      "id": "User authentication",
-      "isDefault": false
-    },
-    {
-      "id": "Organization authentication",
-      "isDefault": false
-    },
-    {
       "id": "Admin",
-      "isDefault": false
-    },
-    {
-      "id": "User",
-      "isDefault": false
-    },
-    {
-      "id": "Email verify",
       "isDefault": false
     }
   ],
