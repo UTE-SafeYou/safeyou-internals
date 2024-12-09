@@ -6,12 +6,12 @@
     <img src="./assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Safe You Client</h3>
+  <h3 align="center">Safe You Internals</h3>
 
   <p align="center">
-   Phần mềm mã nguồn mở ở phía client cho Safe You  
+   Phần mềm mã nguồn mở ở phía nội bộ cho Safe You  
     <br />
-    <a href="https://ute-safeyou.github.io/safeyou-docs/"><strong>Tài liệu phát triển client»</strong></a>
+    <a href="https://ute-safeyou.github.io/safeyou-docs/"><strong>Tài liệu phát triển internals»</strong></a>
     <br />
     <br />
     <a href="https://olp-asm.huuloc.id.vn/app/safeyou-internals/admin-authentication-67543a23fd51167a0308d7b7?branch=master">Online demo</a>
@@ -22,17 +22,12 @@
   </p>
 </div>
 
-## Về Safe You Project 👋
+## Về Safe You Internals 👋
 
 ![alt text](./assets/preview.png)
 
-Safe You Project là một nền tảng ứng dụng công nghệ thông tin nhằm giải quyết các vấn đề trong việc ứng phó với các tình huống khẩn cấp, đặc biệt là trong các trường hợp thiên tai và đại dịch. Trong bối cảnh tình hình khẩn cấp, việc quản lý, giao tiếp và điều hành giữa các cấp phải thực hiện qua nhiều bước thủ công, gây ra sự chậm trễ và khó khăn trong việc phối hợp. Điều này dẫn đến sự thiếu hiệu quả trong việc phản ứng nhanh chóng và kịp thời.
-
-Giá trị cốt lõi của Safe You Team:
-
-- Yêu thương 💖
-- Chủ động 🌱
-- Tận tâm 🌼
+Safe You Team đã xuất ra `safeyou-internals.json` để bạn có thể import và phát triển theo cách của bạn.
+Bạn có thể xem hướng dẫn cách import tại đây: [Hướng dẫn import](https://ute-safeyou.github.io/safeyou-docs/)
 
 <p align="right">(<a href="#readme-top">trở lên đầu</a>)</p>
 
@@ -187,8 +182,8 @@ Những đóng góp quý báu của bạn làm cho cộng đồng mã nguồn m�
 
 Nếu bạn có đề xuất nào giúp dự án trở nên tốt hơn, hãy fork dự án và tạo một pull request. Bạn cũng có thể đơn giản mở một issue với tag "enhancement" hoặc ấn vào các đường dẫn sau:
 
-1. Báo cáo lỗi: [Báo cáo lỗi](https://github.com/UTE-SafeYou/safeyou-client/issues/new?assignees=&labels=&projects=&template=b%C3%A1o-c%C3%A1o-l%E1%BB%97i.md&title=báo-cáo-lỗi)
-2. Yêu cầu tính năng: [Yêu cầu tính năng](https://github.com/UTE-SafeYou/safeyou-client/issues/new?assignees=&labels=&projects=&template=y%C3%AAu-c%E1%BA%A7u-t%C3%ADnh-n%C4%83ng.md&title=)
+1. Báo cáo lỗi: [Báo cáo lỗi](https://github.com/UTE-SafeYou/safeyou-internals/issues/new?assignees=&labels=&projects=&template=b%C3%A1o-c%C3%A1o-l%E1%BB%97i.md&title=báo-cáo-lỗi)
+2. Yêu cầu tính năng: [Yêu cầu tính năng](https://github.com/UTE-SafeYou/safeyou-internals/issues/new?assignees=&labels=&projects=&template=y%C3%AAu-c%E1%BA%A7u-t%C3%ADnh-n%C4%83ng.md&title=)
 
 Ngoài Github, Safe You cũng se tổng hợp các lỗi và hướng dẫn hỗ trợ [tại đây](https://docs.google.com/spreadsheets/d/16oQy8kBOMlrbtV0BpOXKJEzr7BDqgaNaqXXxt4xpibk/edit?usp=sharing)
 
