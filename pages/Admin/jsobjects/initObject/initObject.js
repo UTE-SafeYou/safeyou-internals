@@ -1,6 +1,5 @@
 export default {
 
-
 	uuidv4() {
 		return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'
 			.replace(/[xy]/g, function (c) {
@@ -10,6 +9,7 @@ export default {
 		});
 	},
 	async initData() {
+		storeValue("showDetail", false);
 		const supabase = supabase_service.supabaseProvider();
 
 		const { data:initIssueData, error } = await supabase
@@ -19,16 +19,13 @@ export default {
 		storeValue("issueEvents", initIssueData);
 	},
 	async initRealtimeConnection () {
-		// Get init data
+
 		const supabase = supabase_service.supabaseProvider();
 
-		const { data } = await supabase.rpc('get_places_with_lat_lon')
-		console.log(data);
-
 		// Create a function to handle inserts
-		const handleInserts = (payload) => {
-			let currentIssueEvents = appsmith.store.issueEvents;
-			currentIssueEvents.push(payload.new);
+		const handleInserts = async (payload) => {
+			await get_issue_events.run();
+			issueTable.setData(get_issue_events.data);
 		}
 
 		// Listen to inserts
@@ -36,5 +33,8 @@ export default {
 			.channel('issue_event')
 			.on('postgres_changes', { event: '*', schema: 'public', table: 'issue_event' }, handleInserts)
 			.subscribe()
+
+
+
 	}
 }

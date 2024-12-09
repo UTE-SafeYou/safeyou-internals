@@ -3,7 +3,7 @@
   "borderColor": "#f1f5f9",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1\n",
-  "bottomRow": 124,
+  "bottomRow": 104,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -59,9 +59,9 @@
   "parentColumnSpace": 19.75,
   "parentId": "5uda0537ki",
   "parentRowSpace": 10,
-  "rightColumn": 30,
+  "rightColumn": 29,
   "shouldScrollContents": false,
-  "topRow": 38,
+  "topRow": 18,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "7xbbustvm0",

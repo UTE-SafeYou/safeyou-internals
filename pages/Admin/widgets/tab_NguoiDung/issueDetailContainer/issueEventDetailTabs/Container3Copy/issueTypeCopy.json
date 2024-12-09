@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "df0hxjjaob",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Loại sự kiện",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 38,
+  "mobileRightColumn": 58,
+  "mobileTopRow": 30,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
+  "parentColumnSpace": 24.7203125,
+  "parentId": "bju0utqcql",
+  "parentRowSpace": 10,
+  "placeholderText": "Lựa chọn",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"thiên tai\",\n    \"code\": \"DISASTER\"\n  },\n  {\n    \"name\": \"dịch bệnh\",\n    \"code\": \"PANDEMIC\"\n  }\n]",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "993v0luuhj",
+  "widgetName": "issueTypeCopy"
+}
