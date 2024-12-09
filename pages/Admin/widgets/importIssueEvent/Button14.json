@@ -2,6 +2,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
+  "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
   "buttonColor": "#2563eb",
   "buttonVariant": "PRIMARY",
@@ -9,15 +10,27 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "notifications",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{issueEventTabs.selectedTab === \"3. Tổng hợp\"}}",
   "key": "atoubkjlir",
   "leftColumn": 46,
   "minWidth": 120,
@@ -26,8 +39,9 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 60,
   "needsErrorInfo": false,
-  "originalBottomRow": 71,
-  "originalTopRow": 67,
+  "onClick": "{{issueEventObject.createIssueEvent();}}",
+  "originalBottomRow": 5,
+  "originalTopRow": 1,
   "parentColumnSpace": 24.4078125,
   "parentId": "x9a7gyrbud",
   "parentRowSpace": 10,
@@ -39,6 +53,7 @@
   "rightColumn": 57,
   "text": "Hoàn tất",
   "topRow": 1,
+  "topRowBeforeCollapse": 1,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "5g3e4nf8ze",

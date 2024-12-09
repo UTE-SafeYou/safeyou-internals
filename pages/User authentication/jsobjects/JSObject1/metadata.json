@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "67543a55fd51167a0308d7f8_2029702c-317f-4b17-b5d0-2b9d3826e174",
+  "id": "User authentication_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "User authentication",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}
