@@ -150,6 +150,13 @@ Dưới đây là hướng dẫn ngắn cách cài đặt hệ thống.
 
 <p align="right">(<a href="#readme-top">trở lên đầu</a>)</p>
 
+
+## Tài khoản mặc định
+
+- Admin:
+    - Email: `admin@gmail.com`
+    - Password: `123465`
+
 ## Tài liệu kỹ thuật
 
 Safe You sử dụng Mkdocs để tạo tài liệu kỹ thuật. Bạn có thể xem tài liệu kỹ thuật của Safe You tại [đây](https://ute-safeyou.github.io/safeyou-docs/).
