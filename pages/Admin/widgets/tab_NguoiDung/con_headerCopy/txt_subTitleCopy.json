@@ -34,10 +34,10 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Giao nhiệm vụ cho các tình nguyện viên để họ",
+  "text": "Giao nhiệm vụ cho các tình nguyện viên và theo dõi tiến độ của các công việc tình nguyện.",
   "textAlign": "LEFT",
   "textColor": "#9BA0B0",
-  "topRow": 11,
+  "topRow": 9,
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,

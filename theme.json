@@ -33,7 +33,7 @@
         "Ubuntu"
       ]
     },
-    "order": 6.0
+    "order": 6
   },
   "displayName": "Earth",
   "isSystemTheme": false,
@@ -46,7 +46,7 @@
       "appBoxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
     },
     "colors": {
-      "backgroundColor": "#F1F5F9",
+      "backgroundColor": "#93c5fd",
       "primaryColor": "#3b82f6"
     },
     "fontFamily": {

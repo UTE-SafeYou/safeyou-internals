@@ -37,7 +37,7 @@
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
+  "resetFormOnClick": true,
   "responsiveBehavior": "hug",
   "rightColumn": 47,
   "text": "Giao nhiệm vụ\n",

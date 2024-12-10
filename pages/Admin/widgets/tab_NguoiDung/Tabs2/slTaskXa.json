@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 62,
+  "boxShadow": "none",
+  "defaultOptionValue": "DICHBENH",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "optionLabel"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "bsbutau9wr",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Xã / Phường",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "idcommune",
+  "originalBottomRow": 62,
+  "originalTopRow": 55,
+  "parentColumnSpace": 18.183616638183594,
+  "parentId": "r59biap745",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "serverSideFiltering": false,
+  "sourceData": "{{get_task_communes.data}}",
+  "topRow": 55,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "j01gkkzhn1",
+  "widgetName": "slTaskXa"
+}

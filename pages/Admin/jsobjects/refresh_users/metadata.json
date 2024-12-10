@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6757ecf9fd51167a0308dd67_0c4800ac-f927-4e83-9cd3-b632ad96eed3",
+  "id": "Admin_refresh_users",
+  "unpublishedCollection": {
+    "name": "refresh_users",
+    "pageId": "Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

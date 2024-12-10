@@ -182,13 +182,13 @@
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
       "rightColumn": 404.25,
-      "tabId": "tabjckhvae4av",
-      "tabName": "Đóng góp",
+      "tabId": "tabt868f5x2vs",
+      "tabName": "Cổng thông tin",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "ufvy364zjh",
-      "widgetName": "Canvas137"
+      "widgetId": "d1x7o6sd6n",
+      "widgetName": "Canvas138"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -210,7 +210,7 @@
       "flexLayers": [],
       "isLoading": false,
       "isVisible": true,
-      "key": "n47kimnf4e",
+      "key": "ay2ovz7o5j",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
@@ -218,7 +218,7 @@
       "minWidth": 450,
       "mobileBottomRow": 41,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": 404.25,
+      "mobileRightColumn": 724.28125,
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
@@ -226,14 +226,14 @@
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": 404.25,
-      "tabId": "tabt868f5x2vs",
-      "tabName": "Cổng thông tin",
+      "rightColumn": 724.28125,
+      "tabId": "tabinhvnkr78z",
+      "tabName": "Đóng góp của người dân",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "d1x7o6sd6n",
-      "widgetName": "Canvas138"
+      "widgetId": "jiopdbyyad",
+      "widgetName": "Canvas153"
     }
   ],
   "defaultTab": "Hệ thống cảnh báo",
@@ -290,16 +290,16 @@
       "positioning": "vertical",
       "widgetId": "9om8h6x0h2"
     },
-    "tabjckhvae4av": {
-      "id": "tabjckhvae4av",
-      "index": 3,
+    "tabinhvnkr78z": {
+      "id": "tabinhvnkr78z",
+      "index": 4,
       "isVisible": true,
-      "label": "Đóng góp",
-      "widgetId": "ufvy364zjh"
+      "label": "Đóng góp của người dân",
+      "widgetId": "jiopdbyyad"
     },
     "tabt868f5x2vs": {
       "id": "tabt868f5x2vs",
-      "index": 4,
+      "index": 3,
       "isVisible": true,
       "label": "Cổng thông tin",
       "widgetId": "d1x7o6sd6n"

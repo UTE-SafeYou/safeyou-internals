@@ -1,0 +1,3 @@
+SELECT *
+FROM public.report r
+INNER JOIN public.address a ON r.address_id = a.address_id
