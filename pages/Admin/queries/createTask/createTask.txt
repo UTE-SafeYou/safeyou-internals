@@ -1,10 +1,9 @@
 {
 	"address": {
-		"street_number": {{txtSoNha.text}},
-		"street": {{txtDuong.text}},
-		"ward": {{txtPhuong.text}},
-		"city": {{txtThanhPho.text}},
-		"district": {{txtQuan.text}}
+		"street": {{txtTaskDuong.text}},
+		"ward": {{slTaskXa.selectedOptionLabel}},
+		"city": {{slTaskThanhPho.selectedOptionLabel}},
+		"district": {{slTaskQuan.selectedOptionLabel}}
 	},
 	"task": {
 		"title": {{txtTenNV.text}},

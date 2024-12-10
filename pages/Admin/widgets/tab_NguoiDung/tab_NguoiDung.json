@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1\n\n",
-  "bottomRow": 116,
+  "bottomRow": 86,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1060,
+      "bottomRow": 1040,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1270,
+      "bottomRow": 1100,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -147,7 +147,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1620,
+      "bottomRow": 1630,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -192,7 +192,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1060,
+      "bottomRow": 760,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -234,6 +234,51 @@
       "version": 1,
       "widgetId": "bmmrjqf6r9",
       "widgetName": "Canvas145"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 760,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "nwir8w9mgg",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 1120,
+      "minWidth": 450,
+      "mobileBottomRow": 1121,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1268,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "clqsj917u0",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1268,
+      "tabId": "tabxg9wecyefl",
+      "tabName": "Đóng góp của người dân",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "ohuzmhgjtd",
+      "widgetName": "Canvas154"
     }
   ],
   "defaultTab": "{{navigationTab.selectedTab}}",
@@ -265,7 +310,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "originalBottomRow": 136,
+  "originalBottomRow": 86,
   "originalTopRow": 10,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -316,6 +361,13 @@
       "isVisible": true,
       "label": "Đóng góp",
       "widgetId": "xzj99mhd4c"
+    },
+    "tabxg9wecyefl": {
+      "id": "tabxg9wecyefl",
+      "index": 5,
+      "isVisible": true,
+      "label": "Đóng góp của người dân",
+      "widgetId": "ohuzmhgjtd"
     }
   },
   "topRow": 10,

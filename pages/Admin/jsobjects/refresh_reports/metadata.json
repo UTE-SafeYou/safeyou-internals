@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6757ecf9fd51167a0308dd67_9ca7462c-23ac-4154-b811-f4135356bcd4",
+  "id": "Admin_refresh_reports",
+  "unpublishedCollection": {
+    "name": "refresh_reports",
+    "pageId": "Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

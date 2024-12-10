@@ -11,13 +11,18 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"address\": {\n\t\t\"street_number\": {{txtSoNha.text}},\n\t\t\"street\": {{txtDuong.text}},\n\t\t\"ward\": {{txtPhuong.text}},\n\t\t\"city\": {{txtThanhPho.text}},\n\t\t\"district\": {{txtQuan.text}}\n\t},\n\t\"task\": {\n\t\t\"title\": {{txtTenNV.text}},\n\t\t\"description\": {{txtChiTiet.text}},\n\t\t\"required_skills\": {{txtKiNang.text}},\n\t\t\"urgency\": {{slKhanCap.selectedOptionValue}},\n\t\t\"start_date\": {{dpNgayBatDau.selectedDate}},\n\t\t\"end_date\": {{dpNgayKetThuc.selectedDate}},\n\t\t\"task_status\": {{slTrangThai.selectedOptionValue}}\n\t}\n\n}\n",
+      "body": "{\n\t\"address\": {\n\t\t\"street\": {{txtTaskDuong.text}},\n\t\t\"ward\": {{slTaskXa.selectedOptionLabel}},\n\t\t\"city\": {{slTaskThanhPho.selectedOptionLabel}},\n\t\t\"district\": {{slTaskQuan.selectedOptionLabel}}\n\t},\n\t\"task\": {\n\t\t\"title\": {{txtTenNV.text}},\n\t\t\"description\": {{txtChiTiet.text}},\n\t\t\"required_skills\": {{txtKiNang.text}},\n\t\t\"urgency\": {{slKhanCap.selectedOptionValue}},\n\t\t\"start_date\": {{dpNgayBatDau.selectedDate}},\n\t\t\"end_date\": {{dpNgayKetThuc.selectedDate}},\n\t\t\"task_status\": {{slTrangThai.selectedOptionValue}}\n\t}\n\n}\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "application/json"
       },
-      "headers": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer {{appsmith.store.access_token}}"
+        }
+      ],
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
@@ -40,6 +45,9 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "headers[0].value"
       }
     ],
     "executeOnLoad": false,

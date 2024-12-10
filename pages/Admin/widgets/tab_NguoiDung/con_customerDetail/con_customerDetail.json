@@ -8,7 +8,7 @@
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
-      "bottomRow": 890,
+      "bottomRow": 860,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
