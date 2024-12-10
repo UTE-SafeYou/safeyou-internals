@@ -1,6 +1,6 @@
-{{{ 
-	"_description": this.params.description,
-	"_label": this.params.label,
-	"_place_ids": this.params.place_ids, 
-	"_title": this.params.title 
-}}}
+{
+	"title": {{this.params.title}},
+	"description": {{this.params.description}},
+	"label": {{this.params.label}},
+	"places_input": {{this.params.places_input}} // Pass places as a JSON string
+}
