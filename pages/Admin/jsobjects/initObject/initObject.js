@@ -10,9 +10,9 @@ export default {
 	},
 	async initData() {
 		storeValue("showDetail", false);
-		const supabase = supabase_service.supabaseProvider();
+		const supabase_client = supabase_service.supabaseProvider();
 
-		const { data:initIssueData, error } = await supabase
+		const { data:initIssueData, error } = await supabase_client
 		.from('issue_event')
 		.select()
 
@@ -20,16 +20,17 @@ export default {
 	},
 	async initRealtimeConnection () {
 
-		const supabase = supabase_service.supabaseProvider();
+		const supabase_client = supabase_service.supabaseProvider();
 
 		// Create a function to handle inserts
 		const handleInserts = async (payload) => {
+			showAlert("WHOLE!");
 			await get_issue_events.run();
 			issueTable.setData(get_issue_events.data);
 		}
 
 		// Listen to inserts
-		supabase
+		supabase_client
 			.channel('issue_event')
 			.on('postgres_changes', { event: '*', schema: 'public', table: 'issue_event' }, handleInserts)
 			.subscribe()

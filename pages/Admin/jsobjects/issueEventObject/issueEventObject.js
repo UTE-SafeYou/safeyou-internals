@@ -80,7 +80,7 @@ export default {
                 <br/>
                 <p>${issueDescription.text}</p>
                 <br/>
-                Cập nhật thời gian thực cho tình huống này: <a href={${issue_link}}>Tổng hợp thông tin cho tình huống này</a>
+                Cập nhật thời gian thực cho tình huống này: <a href="${issue_link}">Tổng hợp thông tin cho tình huống này</a>
             `,
 				users: receiver_table.tableData,
 				notification_type: "Emergency"
