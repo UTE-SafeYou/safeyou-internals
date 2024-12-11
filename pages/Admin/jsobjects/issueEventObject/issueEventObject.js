@@ -39,71 +39,63 @@ export default {
 	},
 	async createIssueEvent() {
 
-		if(!issueEventObject.formValidate()) {
+		// Validate the form
+		if (!issueEventObject.formValidate()) {
 			showAlert("Vui lòng điền đầy đủ thông tin", "error");
 			return;
 		}
-		// Create places 
-		// Chuyển sang đơn vị vật lý là mét
+
+		// Prepare places data (convert radius to meters and format the data correctly)
 		let issuePlaces = appsmith.store.issuePlace;
 		let submitIssuePlaces = issuePlaces.map(
 			item => ({
-				radius: item.radius * 1000, // meter
+				radius: item.radius * 1000, // Convert to meters
 				lattitude: item.lat,
 				longitude: item.lon,
-				"location": {"type": "Point", "coordinates": [item.lat, item.lon]},
+				location: { "type": "Point", "coordinates": [item.lat, item.lon] },
 				place_type: issueType.selectedOptionLabel,
-				additional_info: {place: item.place, title: issueTitle.text, description: issueDescription.text}
+				additional_info: { place: item.place, title: issueTitle.text, description: issueDescription.text }
 			})
 		);
 
-
 		try {
-
-			await insert_places.run({
-				places: submitIssuePlaces
+			// Step 1: Call insert_issue_event_with_places with all data
+			let response = await insert_issue_event_with_places.run({
+				title: issueTitle.text,
+				description: issueDescription.text,
+				label: issueType.selectedOptionLabel,
+				places_input: submitIssuePlaces // Pass places as a JSON string
 			});
 
-			let place_ids = insert_places.data;
+			let newIssue = response.data; // Extract the returned issue_id from the response
+			showAlert("Thiết lập cảnh báo thành công", "success");
 
-			showAlert("Thiết lập địa điểm", "success");
-			await insert_issue_event_with_places.run({
-				title: issueTitle.text,
-				place_ids: place_ids,
-				label: issueType.selectedOptionLabel,
-				description: issueDescription.text
-			})
-			let newIssue = insert_issue_event_with_places.data;
-			showAlert("Thiết lập cảnh báo", "success");
-
-			// Trigger cho webhook về issueId
+			// Step 2: Trigger webhook for the issue ID
 			let issue_link = 'https://olp-asm.huuloc.id.vn/app/safeyou-internals/admin-67543a23fd51167a0308d7b8/edit/jsObjects/67543a23fd51167a0308d7ec?branch=feat%252Fblog';
 			// Trigger notification system
-
 			await send_issue_automation.run({
 				title: issueTitle.text,
 				body: `
-					<h1>${issueTitle.text}</h1>
-					<br/>
-					<p>${issueDescription.text}</p>
-					<br/>
-					Cập nhật thời gian thực cho tình huống này: <a href={${issue_link}}>Tổng hợp thông tin cho tình huống này</a>
-				`,
+                <h1>${issueTitle.text}</h1>
+                <br/>
+                <p>${issueDescription.text}</p>
+                <br/>
+                Cập nhật thời gian thực cho tình huống này: <a href="${issue_link}">Tổng hợp thông tin cho tình huống này</a>
+            `,
 				users: receiver_table.tableData,
 				notification_type: "Emergency"
 			});
+
 			showAlert("Hoàn tất", "success");
 			closeModal(importIssueEvent.name);
 
 			// Clear form
 			issueEventObject.clearForm();
 
-
 		} catch (error) {
-			showAlert(error.message +  " Thiết lập thất bại", "error");
+			showAlert(error.message + " Thiết lập thất bại", "error");
 			return;
 		}
-
 	},
 	savePlaceTable: () => {
 		let data = appsmith.store.issuePlace;

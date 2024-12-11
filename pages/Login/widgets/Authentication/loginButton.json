@@ -42,7 +42,7 @@
   "onClick": "{{login_user.run().then(() => {\n  authObject.loginButtononClick();\n  showAlert('Chào mừng bạn quay trở lại 👋', '');\n  navigateTo('Admin', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Sai mật khẩu hoặc email', 'error');\n});}}",
   "originalBottomRow": 27,
   "originalTopRow": 22,
-  "parentId": "m2xr5bh4qa",
+  "parentId": "x54hzh1yzg",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -53,6 +53,6 @@
   "topRow": 22,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "kyk11n11qg",
+  "widgetId": "mm4hnwtfwg",
   "widgetName": "loginButton"
 }

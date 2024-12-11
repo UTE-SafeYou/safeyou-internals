@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{{ \n\t\"_description\": this.params.description,\n\t\"_label\": this.params.label,\n\t\"_place_ids\": this.params.place_ids, \n\t\"_title\": this.params.title \n}}}",
+      "body": "{\n\t\"title\": {{this.params.title}},\n\t\"description\": {{this.params.description}},\n\t\"label\": {{this.params.label}},\n\t\"places_input\": {{this.params.places_input}} // Pass places as a JSON string\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

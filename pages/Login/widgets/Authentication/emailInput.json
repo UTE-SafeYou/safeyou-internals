@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 12,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -12,24 +12,21 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
-  "errorMessage": "Mật khẩu không được trống",
+  "errorMessage": "Email phải đúng định dạng",
   "iconAlign": "left",
-  "inputType": "PASSWORD",
+  "inputType": "EMAIL",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "khilvqxvm9",
-  "label": "Mật khẩu",
+  "label": "Email",
   "labelAlignment": "left",
-  "labelPosition": "Auto",
+  "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
@@ -42,10 +39,10 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "originalBottomRow": 20,
-  "originalTopRow": 13,
+  "originalBottomRow": 12,
+  "originalTopRow": 5,
   "parentColumnSpace": 6.123291015625,
-  "parentId": "m2xr5bh4qa",
+  "parentId": "x54hzh1yzg",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -53,10 +50,10 @@
   "rightColumn": 63,
   "shouldAllowAutofill": true,
   "showStepArrows": false,
-  "topRow": 13,
+  "tooltip": "",
+  "topRow": 5,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{passwordInput.text.length > 0}}",
   "version": 2,
-  "widgetId": "t8m1vnc7o6",
-  "widgetName": "passwordInput"
+  "widgetId": "muh0k1khm2",
+  "widgetName": "emailInput"
 }

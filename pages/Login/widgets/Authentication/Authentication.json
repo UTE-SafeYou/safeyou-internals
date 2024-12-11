@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "1.5rem",
   "borderWidth": "1",
-  "bottomRow": 45,
+  "bottomRow": 44,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -38,7 +38,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "dfbm57uilq",
+      "parentId": "bm8614vqxo",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,7 +46,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "m2xr5bh4qa",
+      "widgetId": "x54hzh1yzg",
       "widgetName": "Canvas1"
     }
   ],
@@ -62,7 +62,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "05jy7zjrx8",
-  "leftColumn": 5,
+  "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -74,15 +74,15 @@
   "originalBottomRow": 41,
   "originalTopRow": 11,
   "parentColumnSpace": 14.203125,
-  "parentId": "5t99fsvpes",
+  "parentId": "0",
   "parentRowSpace": 10,
   "positioning": "fixed",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 59,
+  "rightColumn": 55,
   "shouldScrollContents": true,
-  "topRow": 15,
+  "topRow": 14,
   "type": "FORM_WIDGET",
-  "widgetId": "dfbm57uilq",
+  "widgetId": "bm8614vqxo",
   "widgetName": "Authentication"
 }

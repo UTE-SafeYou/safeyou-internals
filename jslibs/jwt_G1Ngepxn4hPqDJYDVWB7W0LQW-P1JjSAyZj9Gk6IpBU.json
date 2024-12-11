@@ -1,0 +1,10 @@
+{
+  "accessor": [
+    "jwt_check_expiration"
+  ],
+  "defs": "{\"!name\":\"LIB/jwt_check_expiration\",\"jwt_check_expiration\":{\"isJwtExpired\":{\"!type\":\"fn()\"}}}",
+  "name": "jwt_check_expiration",
+  "uidString": "jwt_check_expiration_https://cdn.jsdelivr.net/npm/jwt-check-expiration@1.0.5/+esm",
+  "url": "https://cdn.jsdelivr.net/npm/jwt-check-expiration@1.0.5/+esm",
+  "version": "1.0.5"
+}

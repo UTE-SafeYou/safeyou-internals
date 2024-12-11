@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67582c54fd51167a0308dea6_f838ff14-c528-4d69-9eca-de57a74a6532",
+  "id": "Admin_Check_Auth",
+  "unpublishedCollection": {
+    "name": "Check_Auth",
+    "pageId": "Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
