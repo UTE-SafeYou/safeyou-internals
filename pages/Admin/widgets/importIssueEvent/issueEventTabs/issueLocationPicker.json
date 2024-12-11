@@ -5,7 +5,7 @@
   "borderWidth": "1",
   "bottomRow": 57,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "{{{\n\tGOONG_API_URL: 'https://rsapi.goong.io',\n\tGOONG_MAP_URL: 'https://tiles.goong.io/assets/',\n\tMAPBOX_ACCESS_TOKEN: 'pk.eyJ1IjoidGN0b2FuMTAyNCIsImEiOiJjbTQ3dWRzN2wwOW4zMmtvbjVtajN5MHJvIn0.MOyUsBtVxpENoy3jYjiLLw',\n\tGOONG_API_KEY: '2GE2CBLMj5bdGsEuJhQrmBQ9dXMTDE35xfx1aR2B',\n\tGOONG_MAP_TILES_API_KEY: 'mQn3EXqA6N5UrnTUr72TgItlg0yzPHxavSEmK2JE',\t\n\tlocationState: appsmith.store.locationState,\n\tcurrentRadius: radiusInput.text,\n\tcurrentPlaces: appsmith.store.issuePlace\n}}}",
+  "defaultModel": "{{{\n\tGOONG_API_URL: 'https://rsapi.goong.io',\n\tGOONG_MAP_URL: 'https://tiles.goong.io/assets/',\n\tMAPBOX_ACCESS_TOKEN: 'pk.eyJ1IjoidGN0b2FuMTAyNCIsImEiOiJjbTQ3dWRzN2wwOW4zMmtvbjVtajN5MHJvIn0.MOyUsBtVxpENoy3jYjiLLw',\n\tGOONG_API_KEY: 'wqWXtOxCzVsV0Qm5dyKmFc3a2yyW1tdCmF4LMUSG',\n\tGOONG_MAP_TILES_API_KEY: 'mQn3EXqA6N5UrnTUr72TgItlg0yzPHxavSEmK2JE',\t\n\tlocationState: appsmith.store.locationState,\n\tcurrentRadius: radiusInput.text,\n\tcurrentPlaces: appsmith.store.issuePlace\n}}}",
   "dynamicBindingPathList": [
     {
       "key": "theme"
