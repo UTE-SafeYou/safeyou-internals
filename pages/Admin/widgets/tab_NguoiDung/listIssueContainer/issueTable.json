@@ -260,7 +260,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Xem chi tiết",
-          "onClick": "{{issueEventObject.composeIssueEventDetail();}}",
+          "onClick": "{{issueEventObject.composeIssueEventDetail(currentRow);}}",
           "widgetId": "lkjto79rmp"
         },
         "menuItemflhcd55umi": {

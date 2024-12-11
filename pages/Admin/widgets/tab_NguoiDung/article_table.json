@@ -235,7 +235,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Xem",
-          "onClick": "{{storeValue('currentPreviewContent', article_table.selectedRow.content).then(() => {\n  showModal(Article_preview_modal.name);\n});}}",
+          "onClick": "{{storeValue('currentPreviewContent', currentRow.content).then(() => {\n  showModal(Article_preview_modal.name);\n});}}",
           "widgetId": "qvz6xq1yqz"
         }
       },

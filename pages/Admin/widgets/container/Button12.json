@@ -11,7 +11,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "notifications",
   "isDefaultClickDisabled": true,
@@ -26,6 +30,7 @@
   "mobileRightColumn": 54,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "onClick": "{{showModal()}}",
   "parentColumnSpace": 16.53125,
   "parentId": "ebmnu8sr9a",
   "parentRowSpace": 10,

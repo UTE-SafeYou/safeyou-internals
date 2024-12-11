@@ -11,7 +11,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "cross",
   "isDefaultClickDisabled": true,
@@ -26,6 +30,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 60,
   "needsErrorInfo": false,
+  "onClick": "{{closeModal(importIssueEvent.name);}}",
   "originalBottomRow": 71,
   "originalTopRow": 67,
   "parentColumnSpace": 24.4078125,
